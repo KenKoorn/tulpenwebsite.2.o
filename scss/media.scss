@@ -1,0 +1,104 @@
+@use 'color';
+
+@media screen and (max-width :75rem) {
+    .body{
+        font-size: 2rem;
+        font-family: 'Lato', sans-serif;
+        background: #16213E;
+    }
+
+    .header{
+        height: 140rem;
+    }
+
+    .over{
+        padding: 4rem;
+        height: 100rem;
+        border-bottom: color.$border;
+    }
+
+    .over__header{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 2rem;
+    }
+
+    .over__columns{
+        flex-direction: column;
+        height: 80%;
+    }
+
+    .over__column{
+        display: flex;
+        align-items: center;
+        height: 50%;
+        font-size: 55%;
+    }
+
+    .over__p{
+        width: 60%;
+        color: color.$font-color;
+    }
+    
+    .over__figure{
+        position: relative;
+        width: 100%;
+        height: 40%;
+    }
+
+    .kenmerken{
+        list-style: none;
+        color: color.$font-color;
+        flex-shrink: 0;
+        width: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .kenmerken__listItem{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .kenmerken__list{
+        flex-wrap: wrap;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+    }
+
+    .gallerij{
+        height: 80vh;
+    }
+
+    .gallerij__fotos{
+        flex-wrap: wrap;
+    }
+
+    .gallerij__foto{
+        width: 100%;
+    }
+
+    .gallerij{
+        height: 20rem;
+        width: 100%;
+    }
+
+    .gallerij__foto:hover .gallerij__button{
+        opacity: 0;
+    }
+
+    .gallerij__foto:hover .gallerij__section{
+        transform: scale(0);
+    }
+}
+
+
+@media screen and (max-width: 50rem) {
+    .nav__list{
+        flex-direction: column;
+    }
+}
